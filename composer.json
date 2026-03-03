@@ -1,5 +1,6 @@
 {
     "name": "masakielastic/polling",
+    "version": "0.1.0",
     "description": "Reference implementation of the PHP RFC Polling API using stream_select().",
     "type": "library",
     "license": "MIT",
