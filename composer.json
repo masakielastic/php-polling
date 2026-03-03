@@ -1,0 +1,29 @@
+{
+    "name": "masakielastic/polling",
+    "description": "Reference implementation of the PHP RFC Polling API using stream_select().",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "polling",
+        "rfc",
+        "stream-select",
+        "io"
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Io\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Io\\Polling\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/smoke.php"
+    }
+}
