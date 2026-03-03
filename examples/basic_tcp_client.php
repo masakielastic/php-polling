@@ -8,7 +8,7 @@ use Io\Poll\Context;
 use Io\Poll\Event;
 use Io\Poll\StreamPollHandle;
 
-$client = @stream_socket_client('tcp://127.0.0.1:9000', $errorCode, $errorMessage, 3);
+$client = @stream_socket_client('tcp://127.0.0.1:8000', $errorCode, $errorMessage, 3);
 if ($client === false) {
     fwrite(STDERR, "Failed to connect: {$errorMessage} ({$errorCode})\n");
     exit(1);
