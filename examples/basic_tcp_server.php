@@ -20,7 +20,7 @@ $context = new Context();
 $serverWatcher = $context->add(new StreamPollHandle($server), [Event::Read], 'server');
 $clients = [];
 
-fwrite(STDOUT, "Listening on 127.0.0.1:9000\n");
+fwrite(STDOUT, "Listening on 127.0.0.1:8000\n");
 
 while (true) {
     foreach ($context->wait(1) as $watcher) {
